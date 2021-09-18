@@ -38,6 +38,8 @@
 /* m mean medium and this prefix class using for table  */
 /* c mean large and this prefix class using for PC */
 
+
+/* Mobile Grid  */
 .c-0 {
     display: none;
 }
@@ -114,7 +116,8 @@
     max-width: var(--width);
 }
 
-/* Collum Offset  */
+    /* offset option  */
+    
 .c-o-1 {
     --width: calc((100% / 12) * 1);
     margin-left: var(--width);
@@ -170,7 +173,7 @@
     margin-left: var(--width);
 }
 
-/* > Tablet */
+/* Tablet Grid */
 @media (min-width: 740px) {
     .row {
         margin-left: -8px;
@@ -270,6 +273,9 @@
         display: block;
     }
 
+
+    /* offset option  */
+
     .m-o-1 {
         --width: calc((100% / 12) * 1);
         margin-left: var(--width);
@@ -332,6 +338,12 @@
         margin-left: -12px;
         margin-right: -12px;
     }
+
+    .row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
     .col {
         padding-left: 12px;
         padding-right: 12px;
@@ -350,6 +362,13 @@
 
     .l-2 {
         --width: calc((100% / 12) * 2);
+        flex: 0 0 var(--width);
+        max-width: var(--width);
+        display: block;
+    }
+
+    .l-2-4 {
+        --width: 20%; /* calc((100% / 12) * 2.4) */
         flex: 0 0 var(--width);
         max-width: var(--width);
         display: block;
@@ -425,6 +444,9 @@
         display: block;
     }
 
+
+    /* offset option  */
+
     .l-o-1 {
         --width: calc((100% / 12) * 1);
         margin-left: var(--width);
@@ -481,7 +503,7 @@
     }
 }
 
-/* PC low Res - PC High Res  */
+/* PC low Res - PC High Res Grid*/
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 984px;
@@ -510,6 +532,13 @@
 
     .wide .l-2 {
         --width: calc((100% / 12) * 2);
+        flex: 0 0 var(--width);
+        max-width: var(--width);
+        display: block;
+    }
+
+    .wide .l-2-4 {
+        --width: 20%; /* calc((100% / 12) * 2.4) */
         flex: 0 0 var(--width);
         max-width: var(--width);
         display: block;
@@ -584,6 +613,9 @@
         max-width: var(--width);
         display: block;
     }
+
+
+    /* offset option  */
 
     .wide .l-o-1 {
         --width: calc((100% / 12) * 1);
